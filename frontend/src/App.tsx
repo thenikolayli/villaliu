@@ -1,8 +1,11 @@
+import {Route, Router} from "@solidjs/router";
+import Home from "./pages/Home.tsx";
+
 const App = () => {
     return  (
-        <div>
-            <h1>App</h1>
-        </div>
+        <Router>
+            <Route path="/" component={Home} />
+        </Router>
     )
 }
 
