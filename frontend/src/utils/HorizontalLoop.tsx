@@ -139,7 +139,7 @@ function horizontalLoop(items, config) {
                 ratio, startProgress, draggable, dragSnap, lastSnap, initChangeX, wasPlaying,
                 align = () => tl.progress(wrap(startProgress + (draggable.startX - draggable.x) * ratio)),
                 syncIndex = () => tl.closestIndex(true);
-            typeof(InertiaPlugin) === "undefined" && console.warn("InertiaPlugin required for momentum-based scrolling and snapping. https://greensock.com/club");
+            // typeof(InertiaPlugin) === "undefined" && console.warn("InertiaPlugin required for momentum-based scrolling and snapping. https://greensock.com/club");
             draggable = Draggable.create(proxy, {
                 trigger: items[0].parentNode,
                 type: "x",
