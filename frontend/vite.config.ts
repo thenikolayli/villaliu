@@ -7,6 +7,7 @@ export default defineConfig({
 	build: {
 		outDir: "./build"
 	},
+	base: process.env.VITE_DOCKER ? "/static/" : "/",
 	server: {
 		port: 3000
 	}

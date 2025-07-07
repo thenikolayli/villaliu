@@ -2,9 +2,29 @@
 @import 'tailwindcss';
 
 body {
-    @apply bg-[#b1adaa] font-[Oswald];
+    @apply bg-[#b1adaa] font-[Oswald] text-text;
 }
 
 button {
     @apply cursor-pointer;
+}
+
+.star {
+    @apply size-[2rem] lg:size-[4rem];
+}
+
+@theme {
+    --color-bg: oklch(0.8739 0.006 239.83);
+    --color-bg-light: oklch(.9 0.006 239.83);
+    --color-bg-dark: oklch(0.6 0.006 239.83);
+
+    --color-text: oklch(.2 0 0);
+    --color-text-muted: oklch(.3 0 0);
+
+    --color-highlight: oklch(.8 0 0);
+    --color-border: oklch(0.7 0.11 85);
+    --color-border-muted: oklch(0.75 0.1 85);
+
+    --color-primary: oklch(0.617 0.119 89.902);
+    --color-secondary: oklch(0.5 0.119 89.902);
 }
